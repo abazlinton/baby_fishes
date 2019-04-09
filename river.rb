@@ -18,9 +18,9 @@ class River
   def trigger_spawning
     baby_fishes = []
     for fish in @fishes
-      baby_fish = Fish.new("Baby #{fish.name}")
-      # OR -
-      # baby_fish = fish.have_baby
+      baby_fish = fish.have_baby
+      # OR - 
+      # baby_fish = Fish.new("Baby #{fish.name}")
       baby_fishes << baby_fish
     end
     @fishes.concat(baby_fishes)
